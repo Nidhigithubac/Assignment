@@ -1,0 +1,12 @@
+Python program to display the extension of website
+
+a=input("Enter the website:")
+b=a.split(".")
+print(b)
+
+print("The elements are")
+for x in range(len(b)):
+    print (b[x])
+
+print("The extension of the given website is:")
+print(b[-1])
