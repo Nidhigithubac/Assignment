@@ -8,5 +8,9 @@ print("The elements are")
 for x in range(len(b)):
     print (b[x])
 
-print("The extension of the given website is:")
-print(b[-1])
+print("The extension of the given website using negative index:")
+print(b[-1]) 
+
+b.reverse()
+print("The extension of the given website using reverse method:")
+print(b[0])
