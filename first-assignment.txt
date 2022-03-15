@@ -1,16 +1,9 @@
 Python program to display the extension of website
 
-a=input("Enter the website:")
-b=a.split(".")
-print(b)
+import re
 
-print("The elements are")
-for x in range(len(b)):
-    print (b[x])
+text = input("Enter website:")
 
-print("The extension of the given website using negative index:")
-print(b[-1]) 
+a=re.findall('\.\w{2,3}',text)
 
-b.reverse()
-print("The extension of the given website using reverse method:")
-print(b[0])
+print(a[-1])
