@@ -2,8 +2,11 @@ Python program to display the extension of website
 
 import re
 
+def example(text):
+    a=re.findall('\.\w{2,3}',text)
+    return (a[-1])
+    
 text = input("Enter website:")
+b=example(text)
+print (b)
 
-a=re.findall('\.\w{2,3}',text)
-
-print(a[-1])
