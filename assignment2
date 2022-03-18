@@ -1,0 +1,18 @@
+program on dictionaries
+
+# Create empty dict 
+gmail = dict()
+
+# Fill it with some values
+gmail['aaa@gmail.com'] = '1'
+gmail['bbb@gmail.com'] = '2'
+gmail['ccc@gmail.com'] = '3'
+gmail['xxx@gmail.com'] = '5'
+
+ids = ['1', '4', '3','2']
+
+for x in gmail:
+    if gmail[x] in ids:
+        print('The ' + x + ' is matched')
+    else:
+        print('The ' + x + ' is not matched')
