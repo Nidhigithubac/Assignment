@@ -3,10 +3,8 @@ Python program to display the extension of website
 import re
 
 def example(text):
-    a=re.findall('\.\w{2,3}',text)
-    return (a[-1])
+    res = re.findall(r'.*?\.(?P<tld>\w+)\/.*', text)
+    print(res)
     
 text = input("Enter website:")
-b=example(text)
-print (b)
-
+example(text)
